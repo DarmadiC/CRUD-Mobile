@@ -32,15 +32,34 @@
             android:inputType="textPersonName"
             android:textSize="24sp" />
 
-        <EditText
-            android:id="@+id/editText3"
+        <TextView
+            android:id="@+id/textView4"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="Jenis Kelamin"
-            android:inputType="textPersonName"
             android:layout_marginLeft="145px"
+            android:text="Jenis Kelamin"
             android:textSize="24sp" />
+
+        <RadioGroup
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="145px"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Laki-laki" />
+
+            <RadioButton
+                android:id="@+id/rb_female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30px"
+                android:text="Perempuan" />
+        </RadioGroup>
 
         <TextView
             android:id="@+id/textView3"
