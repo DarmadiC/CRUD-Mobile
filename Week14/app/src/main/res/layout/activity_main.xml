@@ -1,108 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".Edit">
 
-    <LinearLayout
+
+    <ListView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="match_parent" />
 
-        <EditText
-            android:id="@+id/editText"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="145px"
-            android:layout_marginTop="50dp"
-            android:ems="10"
-            android:hint="NIM"
-            android:inputType="textPersonName"
-            android:textSize="24sp" />
-
-        <EditText
-            android:id="@+id/editText2"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="145px"
-            android:ems="10"
-            android:hint="Nama"
-            android:inputType="textPersonName"
-            android:textSize="24sp" />
-
-        <TextView
-            android:id="@+id/textView4"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="145px"
-            android:text="Jenis Kelamin"
-            android:textSize="24sp" />
-
-        <RadioGroup
-            android:layout_width="300dp"
-            android:layout_height="50dp"
-            android:layout_marginLeft="145px"
-            android:orientation="horizontal">
-
-            <RadioButton
-                android:id="@+id/rb_male"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:checked="true"
-                android:text="Laki-laki" />
-
-            <RadioButton
-                android:id="@+id/rb_female"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="30px"
-                android:text="Perempuan" />
-        </RadioGroup>
-
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:text="Jurusan :"
-            android:layout_marginLeft="145px"
-            android:textSize="24sp" />
-
-        <Spinner
-            android:id="@+id/spinner"
-            android:layout_marginLeft="145px"
-            android:layout_width="300dp"
-            android:layout_height="42dp" />
-
-        <Button
-            android:id="@+id/button"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="145px"
-            android:layout_marginTop="300px"
-            android:background="@color/colorAccent"
-            android:text="Ubah" />
-
-        <Button
-            android:id="@+id/button3"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="145px"
-            android:layout_marginTop="30px"
-            android:background="@color/colorAccent"
-            android:text="Hapus" />
-
-        <Button
-            android:id="@+id/button2"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="145px"
-            android:layout_marginTop="30px"
-            android:background="@color/colorAccent"
-            android:text="Kembali" />
-
-    </LinearLayout>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+    android:id="@+id/floatingActionButton"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="36dp"
+    android:layout_marginBottom="32dp"
+    android:clickable="true"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:srcCompat="@android:drawable/ic_menu_add" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
